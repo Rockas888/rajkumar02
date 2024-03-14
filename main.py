@@ -22,14 +22,14 @@ import re
 import os
 
 bot = Client("bot",
-             bot_token= "6771114969:AAGyNtM86MygehoVN99NHduB6Ez5WHLw8H4",
+             bot_token= "6971018058:AAGobm7glCNCv12TO1V_MO118hnl5UAboz0",
              api_id= 29611384,
              api_hash= "3090026bd04c23797e0c6ca1d563b5ec")
-ADMINS = [6092609335]
+ADMINS = [6585878012,-1002122540539]
 
 @bot.on_message(filters.command(["start"]) )
 async def account_login(bot: Client, m: Message):
-    editable = await m.reply_text(f"**Hi 👋 Sir.. How are you ?**\n**Bot Made BY 𝐁𝐀𝐓𝐌𝐀𝐍-𝐇.𝐂.™👨🏻‍💻**")
+    editable = await m.reply_text(f"**Hi 👋 Sir.. How are you ?**\n**Bot Made BY 💪 महाबली 🚩**")
 
 @bot.on_message(filters.command(["stop"]) )
 async def restart_handler(_, m):
@@ -43,7 +43,7 @@ async def txt_handler(bot: Client, m: Message):
     x = await input.download()
     await input.delete(True)
     file_name, ext = os.path.splitext(os.path.basename(x))
-    credit = f"𝐁𝐀𝐓𝐌𝐀𝐍-𝐇.𝐂.™🇮🇳"
+    credit = f"💪 महाबली 🚩"
     try:    
         with open(x, "r") as f:
             content = f.read()
@@ -96,7 +96,7 @@ async def txt_handler(bot: Client, m: Message):
     except Exception:
             res = "UN"
     
-    await editable.edit("**Enter Your Name or send 'de' for use default.\n Eg : 𝐁𝐀𝐓𝐌𝐀𝐍-𝐇.𝐂.™👨🏻‍💻**")
+    await editable.edit("**Enter Your Name or send 'de' for use default.\n Eg : 💪 महाबली 🚩**")
     input3: Message = await bot.listen(editable.chat.id)
     raw_text3 = input3.text
     await input3.delete(True)
@@ -157,8 +157,8 @@ async def txt_handler(bot: Client, m: Message):
                 cmd = f'yt-dlp -f "{ytf}" "{url}" -o "{name}.mp4"'
 
             try:                               
-                cc = f'**[🎬] Vid_ID :** {str(count).zfill(3)}\n**Video Title :** {name1}({res}).mkv\n**Batch Name :** {b_name}\n\n**Extracted By ➤ {CR}**'
-                cc1 = f'**[📕] Pdf_ID :** {str(count).zfill(3)}\n**File Title :** {name1}.pdf\n**Batch Name :** {b_name}\n\n**Extracted By ➤ {CR}**'
+                cc = f'** {str(count).zfill(3)}.n** {name1}({res}) महाबली.mkv\n**Batch Name :** {b_name}\n\n**Extracted By ➤ {CR}**'
+                cc1 = f'** {str(count).zfill(3)}.n** {name1} महाबली.pdf\n**Batch Name :** {b_name}\n\n**Extracted By ➤ {CR}**'
                 if "drive" in url:
                     try:
                         ka = await helper.download(url, name)
@@ -183,7 +183,7 @@ async def txt_handler(bot: Client, m: Message):
                         time.sleep(e.x)
                         continue
                 else:
-                    prog = await m.reply_text(f"**DOWNLOADING 📥 :-**\n\n**Video Name ➢** {name}\n**Quality ➢** {raw_text2}\n\n** 𝐓𝐡𝐢𝐬 𝐁𝐨𝐭 𝐌𝐚𝐝𝐞 𝐁𝐲 ➤ 𝐁𝐀𝐓𝐌𝐀𝐍-𝐇.𝐂.™**🇮🇳")
+                    prog = await m.reply_text(f"**DOWNLOADING 📥 :-**\n\n**Video Name ➢** {name}\n**Quality ➢** {raw_text2}\n\n** 𝐓𝐡𝐢𝐬 𝐁𝐨𝐭 𝐌𝐚𝐝𝐞 𝐁𝐲 ➤ 💪 महाबली 🚩")
                     res_file = await helper.download_video(url, cmd, name)
                     filename = res_file
                     await prog.delete(True)
@@ -200,7 +200,7 @@ async def txt_handler(bot: Client, m: Message):
     await m.reply_text("**Done✅**")
 @bot.on_message(filters.command(["visionpdf"]) )
 async def vision_pdf(bot: Client, m: Message):
-    editable = await m.reply_text("**Hello Dear,** I am Text File Downloader📥 Bot.\nI can download **PDFs of vision** from text file one by one.\n\n**Developer: @batmanhcbot👨🏻‍💻** \n**Language:** Python\n**Framework:** 🔥Pyrogram\n\nNow Send Your **TXT File:-**\n")
+    editable = await m.reply_text("**Hello Dear,** I am Text File Downloader📥 Bot.\nI can download **PDFs of vision** from text file one by one.\n\n**Developer: @hackonlyc** \n**Language:** Python\n**Framework:** 🔥Pyrogram\n\nNow Send Your **TXT File:-**\n")
     input: Message = await bot.listen(editable.chat.id)
     x = await input.download()
     await input.delete(True)
