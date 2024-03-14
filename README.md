@@ -17,7 +17,7 @@
 
 ### Credits
 
-* `Special Thanks BATMANHC👨🏻‍💻`
+* `Special Thanks 💪 महाबली 🚩`
 
 
 
